@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  /*background-color: white;*/
+}
+
+a {
+  font-size: 68px;
+}
+
+h1 {
+  color: yellow;
+  text-align: center;
+}
+
+h2 {
+  color: yellow;
+}
+
+label, legend, input {
+  text-align: right;
+  color: yellow;
+}
+
+form {
+  text-align: right;
+}
+
+.box {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  float: left;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  /*border-color: black;*/
+}
+
+#main, #answer {
+  margin: 0 auto;
+  height: 110px;
+  width: 610px;
+}
