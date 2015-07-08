@@ -31,11 +31,11 @@ form {
   margin-right: 10px;
   width: 100px;
   height: 100px;
-  border-radius: 10px;
+  border-radius: 100px;
   float: left;
   border-style: solid;
   border-width: 1px;
-  border-color: white;
+  border-color: hsl(0, 0%, 28%);
   /*border-color: black;*/
 }
 
