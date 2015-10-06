@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1 Create Account Page
+  p
+  include ../includes/errors
+  form(action="/", method="post")
+    div
+      p Name
+      Name
+      input.name(type="text" name="name")
+    div
+      p Email
+      email
+      input.email(type="email" name="email")
+    div
+      p Password
+      password
+      input.password(type="password" name="password")
+    div
+      p Re-type Password
+      password
+      input.password(type="password" name="password")
+    div
+      p
+      input(type='submit' name='submit' value="Create Account")
+  p
+  a(href="/") <<< Go Back

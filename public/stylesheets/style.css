@@ -1,24 +1,31 @@
-body {
+/*body {
   background-color: black;
-  /*background-color: white;*/
+}*/
+
+.white {
+  background-color: black;
+}
+
+.black {
+  background-color: white;
 }
 
 a {
-  font-size: 68px;
+  font-size: 20px;
 }
 
 h1 {
-  color: yellow;
   text-align: center;
-}
-
-h2 {
-  color: yellow;
+  /*color: white;*/
 }
 
 label, legend, input {
   text-align: right;
-  color: yellow;
+  /*color: white;*/
+}
+
+.themeButton {
+  color: black;
 }
 
 form {
@@ -31,11 +38,11 @@ form {
   margin-right: 10px;
   width: 100px;
   height: 100px;
-  border-radius: 100px;
+  border-radius: 10px;
   float: left;
-  border-style: solid;
-  border-width: 1px;
-  border-color: hsl(0, 0%, 28%);
+  /*border-style: solid;*/
+  /*border-width: 1px;*/
+  /*border-color: hsl(0, 0%, 28%);*/
   /*border-color: black;*/
 }
 
@@ -43,4 +50,8 @@ form {
   margin: 0 auto;
   height: 110px;
   width: 610px;
+}
+
+.form-horizontal {
+  text-align: center;
 }

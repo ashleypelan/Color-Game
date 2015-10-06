@@ -1,9 +1,5 @@
-// function getRandomColor() {
-//   return "#" + Math.floor(Math.random() * 16777215).toString(16);
-// }
-
 function getHSL(lightness) {
-  var hue = 110;
+  var hue = 185;
   var saturation = "100%";
 
   var string = "hsl("+ hue + ", " + saturation + ", " + lightness + "%)";
@@ -26,7 +22,6 @@ function shuffle(array) {
 
   return array;
 }
-
 
 var mainDiv = document.getElementById("main");
 var answerDiv = document.getElementById("answer");
@@ -52,7 +47,6 @@ for (var i = 1; i <= 5; i++) {
   });
   mainDiv.appendChild(boxDiv);
 
-
   var greyBox = document.createElement("div");
   greyBox.className = "box";
   greyBox.setAttribute("id", "greyBox" + i);
@@ -64,27 +58,26 @@ for (var i = 1; i <= 5; i++) {
       clickedBox.style.backgroundColor = 'darkgrey';
       clickedBox.setAttribute("id", "box" + i++);
       clickedBox = null;
+    } else {
+      this.style.backgroundColor = clickedBox.style.backgroundColor;
+
     }
-  var box = getElementById("box");
-  box.addEventListener("click", function() {
-      while (clickedBox == boxDiv) {
-        this.style.backgroundColor = clickedBox.style.backgroundColor;
-        this.setAttribute("id", "box" + i++);
-        clickedBox.style.backgroundColor = box.style.backgroundColor;
-        clickedBox.setAttribute("id", "box" + i++);
-        clickedBox = null;
-      }
-});
-      // if (clickedBox) {
-      // clickedBox.style.backgroundColor = this.style.backgroundColor;
-      // clickedBox.setAttribute("id", "box" + i);
-      // this.setAttribute("id", "greyBox" + i++);
-      // }
 
   });
   answerDiv.appendChild(greyBox);
 
 }
+
+var box = getElementById("box");
+box.addEventListener("click", function() {
+    while (clickedBox == boxDiv) {
+      this.style.backgroundColor = clickedBox.style.backgroundColor;
+      this.setAttribute("id", "box" + i++);
+      clickedBox.style.backgroundColor = box.style.backgroundColor;
+      clickedBox.setAttribute("id", "box" + i++);
+      // clickedBox = null;
+    }
+});
 
 //
 // box[i].addEventListener("click", function() {
